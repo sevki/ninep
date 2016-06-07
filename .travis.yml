@@ -6,7 +6,6 @@ go:
 install:
   - export GOPATH="$HOME/gopath"
   - mkdir -p "$GOPATH/src/github.com/Harvey-OS/ninep"
-  - mv "$TRAVIS_BUILD_DIR" "$GOPATH/src/github.com/Harvey-OS/ninep"
   - go get -v -t -d github.com/Harvey-OS/ninep/...
 script:
   - go test github.com/Harvey-OS/ninep/...
